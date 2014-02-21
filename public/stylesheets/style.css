@@ -1,0 +1,23 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eeae4d;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+a {
+  color: #00b7ff;
+}
+header {
+  font-size: 3em;
+  text-align: center;
+  background-color: #ae4240;
+  border-bottom: 2pt solid #5d60ad;
+}
+input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}

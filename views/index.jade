@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	header= title
+	.container
+		p Submit your video below!
+		form
+			input(type='text' placeholder='Video Name')
+			input(type='text' placeholder='YouTube URL')
+			input(type='text' placeholder='Title')
+			input(type='text' placeholder='Description')
+			input(type='button' value='Submit')
