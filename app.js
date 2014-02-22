@@ -36,9 +36,9 @@ app.get('/test', submitController.index);
 // 		res.end(data);
 // 	});
 // });
-// app.post('./test', function(req, res){
-// 	res.render('./test');
-// });
+app.post('/form', function(req, res){
+	console.log(req.body);
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
