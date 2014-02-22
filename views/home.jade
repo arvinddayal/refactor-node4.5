@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	header 
+		img(src='/images/scuba.png') 
+		h1 #{title}
+		img.reverse(src='/images/scuba.png') 
+	.container
+		h2 Submit your video below!
+		form(method="post" action="./test")
+			input(type='text' name='name' placeholder='Your Name')
+			input(type='text' name='url' placeholder='YouTube URL')
+			input(type='text' name='title' placeholder='Title')
+			input(type='text' name='description' placeholder='Description')
+			input.submit(type='submit' id='submitbox' value='Submit')

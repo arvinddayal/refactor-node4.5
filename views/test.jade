@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	for s in allSubmissions
+		p #{s.name}
+		p #{s.url}
+		p #{s.title}
+		p #{s.description}

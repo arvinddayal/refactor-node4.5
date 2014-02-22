@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 var destinationController = require('./controllers/controller.js');
 var app = express();
+var submitController = require('./controllers/submit.js');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -28,6 +29,16 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', destinationController.index);
+app.get('/test', submitController.index);
+// app.get('/form', function (req, res) {
+// 	var fileContents = fs.readFile('home.jade', function(err, data){
+// 		res.writeHead(200, {'Content-Type': 'text/jade'});
+// 		res.end(data);
+// 	});
+// });
+// app.post('./test', function(req, res){
+// 	res.render('./test');
+// });
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

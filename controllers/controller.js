@@ -1,9 +1,9 @@
-var destinations = require('../models/main.js');
+var destinations = require('../models/submissions.js');
 
 module.exports = {
 	index: function (req, res) {
-		res.render('index', {
-			title: 'Best Scuba Diving Video Contest',
+		res.render('home', {
+			title: 'Scuba Diving Video Contest',
 		});
 	}
 };
